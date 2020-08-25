@@ -1,4 +1,4 @@
-    // Calculate Volume of House
+    // Calculate Volume of House; Given Wall Heigth, Width, Depth (Roof Peak Side), Roof Peak
 
     function livingVolume (width, depth, height) {
         return width * depth * height;
@@ -26,4 +26,4 @@
     let Hheight = parseFloat(prompt('Please Enter House Wall Height: '));
     let Hsweep = parseFloat(prompt('Please Enter Roof Sweep: '));
 
-    console.log(houseVolume(Hwidth,Hdepth,Hheight,Hsweep));
+    console.log('House Volume = ' + houseVolume(Hwidth,Hdepth,Hheight,Hsweep));
