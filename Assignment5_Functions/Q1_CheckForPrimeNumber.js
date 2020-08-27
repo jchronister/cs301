@@ -5,7 +5,7 @@
 function checkPrime (number) {
     let end = Math.sqrt(number), prime = false;
 
-    if (number === NaN) return false;
+    if (isNaN(number)) return false;
     if (number > 1) prime = true;
 
     for(let i = 2; i <= end; i+=1){
