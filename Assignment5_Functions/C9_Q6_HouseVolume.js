@@ -1,5 +1,7 @@
     // Calculate Volume of House; Given Wall Heigth, Width, Depth (Roof Peak Side), Roof Peak
 
+    'use strict';
+    
     function livingVolume (width, depth, height) {
         return width * depth * height;
     }

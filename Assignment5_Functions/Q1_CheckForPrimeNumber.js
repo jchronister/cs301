@@ -1,5 +1,7 @@
 // Function to Check if Number is Prime. Returns true/false.
 
+'use strict';
+
 function checkPrime (number) {
     let end = Math.sqrt(number), prime = false;
 
