@@ -1,5 +1,6 @@
 // Function That Adds 1st and Last Values in Array
 
+'use strict';
 
 function addEnds(list){
     return list[0] + list[list.length - 1];

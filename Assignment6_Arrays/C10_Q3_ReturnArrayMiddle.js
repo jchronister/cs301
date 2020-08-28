@@ -1,6 +1,7 @@
 // Function That Returns the Array Middle Element
 // Returns Averge of Middle Elements if Even Array
 
+'use strict';
 
 function getMiddle(list){
     let mid = (list.length - 1) / 2;
@@ -9,5 +10,6 @@ function getMiddle(list){
 
 //let ary = [17, 8, 9, 5, 20];
 let ary = [12, 4, 8, 15, 17, 5, 20, 11];
+
 
 console.log(getMiddle(ary));
