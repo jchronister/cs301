@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Formed HTML</title>
+    <Script>
+        function makeAddress() {
+        let name = document.getElementById("name").value;
+        let street = document.getElementById("street").value;
+        let line = document.getElementById("city").value +", "+document.getElementById("state").value+' '+document.getElementById("zip").value;
+        let addr = document.getElementById("address")
+        addr.innerHTML = '<p>'+name+'</p>'+'<p>'+street+'</p>'+'<p>'+line+'</p>'
+        }
+    </Script>
+</head>
+<body>  
+
+    <h1>Fill in Text Fields to Make Address</h1>
+    <p>Name<input type="textbox" id="name"/></p>
+    <p>Street<input type="textbox" id="street"/></p>
+    <p>City<input type="textbox" id="city"/>
+        State<input type="textbox" id="state"/>
+        Zip Code<input type="textbox" id="zip"/>
+    </p>
+    <button onclick="makeAddress()">Make Address</button>
+    <div id="address"></div>
+    <a href="https://validator.w3.org/check/referer">Validate</a>
+</body>
+</html>

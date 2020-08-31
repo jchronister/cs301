@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function populateDiv () {
+            let name = document.getElementById("name").value;
+
+            let output = document.getElementById("fill");
+
+            let vs = "Listen, " + name  + ", to your father’s instruction and do not forsake your mother’s teaching. Proverbs 1:8";
+
+            output.innerText=vs;
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <h1>Using Textbox and Button to Fill Div Example</h1>
+    <p>Please Enter Your Name:<input type="textbox" id="name"/></p>
+    <button onclick="populateDiv()">Get Verse</button>
+    <div id="fill"></div>
+    <a href="https://validator.w3.org/check/referer">Validate</a>
+</body>
+</html>
