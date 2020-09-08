@@ -3,11 +3,11 @@
 'use strict';
 
 function rotateLeft (list) {
-    let first = list[0],retrn =[];
+    let retrn =[];
     for (let i = 1; i < list.length; i+=1) {
         retrn[i-1] = list[i];
     }
-    retrn[list.length-1] = first;
+    retrn[list.length-1] = list[0];
 
     return retrn;
 
